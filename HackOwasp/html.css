@@ -1,0 +1,235 @@
+/*Scroll bar*/
+body{
+    overflow-y: scroll;
+}
+/*For Chrome and Safari*/
+body::-webkit-scrollbar{
+    display: none;
+}
+/*For Ie and Edge*/
+body{
+    -ms-overflow-style: none;
+}
+/* The navigation bar */
+.nbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    left: 0;
+    width: 100%;
+    /* Full width */
+    z-index: 19;
+    text-transform: uppercase;
+}
+
+#firstcontainer {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+/* Links inside the navbar */
+
+.nbar a[href='#home'] {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    backface-visibility: hidden;
+}
+
+.nbar a[href='plans.html'] {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    backface-visibility: hidden;
+}
+
+.nbar a {
+    backface-visibility: hidden;
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    border-radius: 20px;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nbar a[href='#home'] :hover {
+    backface-visibility: hidden;
+    background: rgb(255, 179, 39);
+}
+
+
+/* Change background on mouse-over */
+
+.nbar a:hover {
+    backface-visibility: hidden;
+    background: rgb(252, 189, 72);
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Main content */
+
+.main {
+    margin-top: 45px;
+    /* Add a top margin to avoid content overlay */
+}
+
+
+/*JUMBOTRON*/
+
+.jumbotron,
+#firstcontainer {
+    background-image: url("FINAL2.png");
+    background-color: black;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin-top: 44px;
+    margin-bottom: 0px;
+}
+
+.jumbotron .row {
+    vertical-align: center;
+}
+
+#first {
+    color: #30CFD0;
+}
+
+#container_1 {
+    background-color: black;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+
+/**/
+
+#headingabout {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+#contentabout {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#aboutus {
+    color: white;
+}
+
+input[type=text],select,textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+/* Style the container/contact section */
+
+.container {
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/* Create two columns that float next to eachother */
+
+.column {
+    margin: auto;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+#contact {
+    background-image: url("https://woodpeckerframes.com/wp-content/uploads/2018/06/contact_banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label {
+    font-size: 20px;
+    color: lightcyan;
+}
+
+div a {
+    color: black;
+    margin-left: 10px;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 1200px) {
+    .column,
+    input[type=submit] {
+        width: 70%;
+        margin-top: 0;
+    }
+    .row,
+    .col-lg-4 {
+        margin-top: 20px;
+    }
+}
+
+.carousel-item {
+    max-height: 500px;
+}
+
+.carousel-item img {
+    max-height: 500px;
+}
+ul{
+    text-align: center;
+    list-style: none;
+}
+.row{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}

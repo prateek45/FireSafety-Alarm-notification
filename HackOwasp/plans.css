@@ -1,0 +1,141 @@
+body {
+    /* background: linear-gradient(rgb(0, 0, 0), rgba(154, 34, 175, 0.523)); */
+    background-image: url('city.jpg');
+    mix-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 760px;
+}
+
+#logo img {
+    margin-left: 17px;
+    width: 100px;
+    height: 60px;
+    border: white;
+    border-radius: 20px;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+.list {
+    padding-top: 28px;
+}
+
+hr {
+    width: 80%;
+    background: #30CFD0;
+}
+
+#plans {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: black;
+    font-size: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.standard, .grey{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 0.5s;
+}
+
+.standard:hover {
+    background-color: rgba(0, 0, 0, 0.578);
+    color: white;
+}
+
+
+/* Create three columns of equal width */
+.row
+{
+    margin: auto;
+    width: 90%;
+   
+}
+.col {
+    width: 33.3% !important;
+    padding: 8px;
+}
+
+
+/* Style the list */
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+
+/* Add shadows on hover */
+
+.price:hover {
+    box-shadow: 18px 18px 20px 0 rgba(0, 0, 0, 0.401);
+}
+
+
+/* Pricing header */
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+
+/* List items */
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+
+/* Grey list item */
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+
+/* The "Sign Up" button */
+
+.button {
+    background-color: #4CAF50;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    text-emphasis: none;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    text-emphasis: none;
+    text-decoration: none;
+    box-shadow: 2px 4px 5px black;
+}
+
+
+/* Change the width of the three columns to 100%
+  (to stack horizontally on small screens) */
+
+@media only screen and (max-width: 600px) {
+    .col {
+        width: 100%;
+    }
+}
